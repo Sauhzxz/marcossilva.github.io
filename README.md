@@ -11,8 +11,7 @@ Tenho interesse em desenvolvimento web e estou sempre buscando evoluir minhas ha
 - Ajustes em HTML e CSS
 
 ## 📞 Contato
-- WhatsApp: (seu número)
-- Email: (seu email)
+- Email: marcossilva.devweb@gmail.com
 
 ---
 
