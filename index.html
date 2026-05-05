@@ -5,75 +5,131 @@
   <title>Marcos Silva | Desenvolvedor Web</title>
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: Arial, sans-serif;
-      background: #0f172a;
+      background: #0b1220;
       color: #fff;
+      scroll-behavior: smooth;
     }
 
     header {
       text-align: center;
-      padding: 60px 20px;
-      background: #020617;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      animation: fadeIn 1s ease-in;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 40px;
+      font-size: 50px;
     }
 
     header p {
       color: #94a3b8;
+      margin-top: 10px;
+      font-size: 18px;
     }
 
     section {
-      padding: 40px 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+      padding: 60px 20px;
+      animation: fadeUp 1s ease-in;
+    }
+
+    h2 {
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
+      margin-bottom: 20px;
     }
 
     .card {
-      background: #1e293b;
+      background: #111827;
       padding: 20px;
       margin: 15px 0;
-      border-radius: 10px;
+      border-radius: 12px;
+      transition: 0.3s;
+      border: 1px solid transparent;
     }
 
-    a {
-      color: #38bdf8;
+    .card:hover {
+      transform: translateY(-5px);
+      border: 1px solid #38bdf8;
+      background: #0f172a;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 14px 22px;
+      background: #25D366;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
       text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.05);
+      background: #1ebe5d;
     }
 
     footer {
       text-align: center;
       padding: 20px;
       color: #64748b;
+      font-size: 14px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Marcos Silva</h1>
-  <p>Criação de páginas simples, bonitas e responsivas</p>
+  <p>Desenvolvedor Web Freelancer | HTML & CSS</p>
+
+  <a class="whatsapp" href="https://wa.me/5531972633957" target="_blank">
+    Falar comigo no WhatsApp
+  </a>
 </header>
 
 <section>
   <h2>Sobre mim</h2>
   <p>
-    Sou desenvolvedor iniciante focado na criação de páginas modernas, organizadas e responsivas.
-    Busco sempre entregar sites leves, funcionais e que transmitam profissionalismo.
+    Sou desenvolvedor freelancer focado na criação de sites modernos, responsivos e rápidos.
+    Busco sempre entregar páginas com design limpo e boa experiência para o usuário.
   </p>
 </section>
 
 <section>
-  <h2>O que eu faço</h2>
+  <h2>Serviços</h2>
 
-  <div class="card">✔ Landing pages simples</div>
+  <div class="card">✔ Landing pages profissionais</div>
+  <div class="card">✔ Sites responsivos (PC e celular)</div>
   <div class="card">✔ Ajustes em HTML e CSS</div>
-  <div class="card">✔ Criação de sites básicos</div>
-
 </section>
 
 <section>
@@ -81,24 +137,29 @@
 
   <div class="card">
     <h3>Landing Page Produto</h3>
-    <p>Página simples para divulgação de produto.</p>
+    <p>Página moderna para divulgação de produto.</p>
   </div>
 
   <div class="card">
-    <h3>Site simples empresa</h3>
-    <p>Página institucional básica.</p>
+    <h3>Site Institucional</h3>
+    <p>Modelo de site para empresa ou serviço.</p>
   </div>
-
 </section>
 
 <section>
   <h2>Contato</h2>
-  <p>Email: marcossilva.dev@gmail.com
-  </p>
+
+  <div class="card">
+    <p>Email: marcossilva.devweb@gmail.com</p>
+
+    <a class="whatsapp" href="https://wa.me/5531972633957" target="_blank">
+      Me chamar no WhatsApp
+    </a>
+  </div>
 </section>
 
 <footer>
-  © 2026 Marcos Silva
+  © 2026 Marcos Silva — Desenvolvedor Freelancer
 </footer>
 
 </body>
