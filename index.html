@@ -2,54 +2,89 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Meu Portfólio</title>
+  <title>Marcos Silva | Desenvolvedor Web</title>
+
   <style>
     body {
-      font-family: Arial;
       margin: 0;
-      background: #111;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
       color: #fff;
     }
+
     header {
       text-align: center;
-      padding: 40px;
-      background: #000;
+      padding: 60px 20px;
+      background: #020617;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    header p {
+      color: #94a3b8;
+    }
+
     section {
-      padding: 30px;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
     }
-    .projeto {
-      background: #222;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 8px;
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
     }
+
     a {
-      color: #00ffcc;
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Site para referencias</h1>
-  <p>Criação de páginas simples em HTML e CSS</p>
+  <h1>Marcos Silva</h1>
+  <p>Criação de páginas simples, bonitas e responsivas</p>
 </header>
 
 <section>
   <h2>Sobre mim</h2>
-  <p>Sou desenvolvedor iniciante focado na criação de páginas modernas, bonitas e responsivas. Meu objetivo é ajudar pessoas e negócios a terem uma presença online simples, profissional e funcional, com sites que carregam rápido e passam uma boa impressão. Estou sempre buscando evoluir e melhorar minhas habilidades para entregar resultados cada vez melhores.</p>
+  <p>
+    Sou desenvolvedor iniciante focado na criação de páginas modernas, organizadas e responsivas.
+    Busco sempre entregar sites leves, funcionais e que transmitam profissionalismo.
+  </p>
+</section>
+
+<section>
+  <h2>O que eu faço</h2>
+
+  <div class="card">✔ Landing pages simples</div>
+  <div class="card">✔ Ajustes em HTML e CSS</div>
+  <div class="card">✔ Criação de sites básicos</div>
+
 </section>
 
 <section>
   <h2>Projetos</h2>
 
-  <div class="projeto">
+  <div class="card">
     <h3>Landing Page Produto</h3>
     <p>Página simples para divulgação de produto.</p>
   </div>
 
-  <div class="projeto">
+  <div class="card">
     <h3>Site simples empresa</h3>
     <p>Página institucional básica.</p>
   </div>
@@ -58,9 +93,13 @@
 
 <section>
   <h2>Contato</h2>
-  <p>WhatsApp: +55 (31) 97263-3957</p>
-  <p>Email: Mu5185500@gmail.com</p>
+  <p>Email: marcossilva.dev@gmail.com
+  </p>
 </section>
+
+<footer>
+  © 2026 Marcos Silva
+</footer>
 
 </body>
 </html>
